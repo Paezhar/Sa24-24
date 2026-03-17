@@ -66,7 +66,7 @@ function Header({ title, subtitle, target, onBack }) {
           position: "absolute", top: 14, right: 14,
           background: "rgba(255,255,255,0.12)", border: "none", borderRadius: 8,
           color: "white", fontSize: 12, fontWeight: 700, padding: "4px 10px", cursor: "pointer"
-}}>Menu</button>
+        }}>Menu</button>
       )}
       <div style={{ fontSize: 11, letterSpacing: 1.5, color: "#9fa8c7", textTransform: "uppercase", marginBottom: 4 }}>SA24 · Procédure SMD</div>
       <div style={{ fontSize: 20, fontWeight: 700, paddingRight: onBack ? 70 : 0 }}>{title}</div>
