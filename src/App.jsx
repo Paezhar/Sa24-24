@@ -66,7 +66,7 @@ function Header({ title, subtitle, target, onBack }) {
           position: "absolute", top: 14, right: 14,
           background: "rgba(255,255,255,0.12)", border: "none", borderRadius: 8,
           color: "white", fontSize: 12, fontWeight: 700, padding: "4px 10px", cursor: "pointer"
-        }}>Menu</button>
+        }}>← Menu</button>
       )}
       <div style={{ fontSize: 11, letterSpacing: 1.5, color: "#9fa8c7", textTransform: "uppercase", marginBottom: 4 }}>SA24 · Procédure SMD</div>
       <div style={{ fontSize: 20, fontWeight: 700, paddingRight: onBack ? 70 : 0 }}>{title}</div>
@@ -456,8 +456,11 @@ export default function SA24App() {
             ))}
           </div>
 
-          <div style={{ textAlign: "center", fontSize: 11, color: "#9ca3af", marginTop: 20 }}>
-            MSSS Québec · Protocoles PSA 2024 · SA24
+          <div style={{ textAlign: "center", fontSize: 10, color: "#9ca3af", marginTop: 16, padding: "10px 8px", borderTop: "1px solid #e5e7eb", lineHeight: 1.5 }}>
+            MSSS Québec · Protocoles PSA 2024 · SA24<br/>
+            <span style={{ color: "#d1d5db" }}>
+              Cet outil est fourni à titre de référence clinique uniquement. Il ne remplace pas le jugement clinique du professionnel de la santé ni les protocoles officiels en vigueur. L'utilisateur assume l'entière responsabilité de la validation des doses avant toute administration. L'auteur décline toute responsabilité en cas d'erreur ou d'utilisation inappropriée.
+            </span>
           </div>
         </>
       )}
